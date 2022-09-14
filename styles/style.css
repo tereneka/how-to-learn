@@ -6,20 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +15,31 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+}
+.logo {
+}
+.logo_place_header {
+}
+.header__title {
+}
+.header__subtitle {
+}
+.header__link {
+}
+.header__main-illustration {
+}
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+}
+.content {
+}
+.footer {
 }

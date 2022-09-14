@@ -1,3 +1,9 @@
+:root {
+  --dark-gray: #1f1f1f;
+  --light-gray: #f2f2f2;
+  --blue: #2f80ed;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -60,6 +66,7 @@
   left: 64px;
   line-height: 25px;
   font-size: 18px;
+  z-index: 1;
 }
 
 .header__link {
@@ -76,7 +83,7 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
-  background-color: #2f80ed;
+  background-color: var(--blue);
   position: absolute;
   top: 64px;
   right: 0;
@@ -86,11 +93,66 @@
 }
 
 .content__section {
-  margin-top: 100px;
+  margin: auto; /* отцентрировала все секции */
+  margin-top: 100px; /* установила отступы между секциями */
 }
 
 .content__section:last-child {
-  margin: 90px auto;
+  margin: 90px auto; /* установила отступы для последней секции, отличные от остальных */
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  margin: 0; /*сбросила отступы браузера*/
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  color: var(--blue);
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 0; /*сбросила отступы браузера*/
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0; /*сбросила отступы для последнего параграфа в блоке*/
+}
+
+.two-columns__span-accent {
+  font-weight: 600;
+}
+
+.section-title {
+  width: 60%;
+}
+
+.section-subtitle {
+  width: 60%;
+}
+
+.table {
+}
+
+.table__cell {
+}
+
+.table__heading {
+}
+
+.table__text {
 }
 
 .footer {

@@ -24,7 +24,8 @@
       <!-- Основное содержимое страницы. -->
       <main class="content">
         <!-- Секция, блок description. -->
-        <section class="two-columns content__section">
+        <section class="description content__section">
+          <div class="two-columns">
             <h3 class="two-columns__brief">Главные проблемы в обучении</h3>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">
@@ -45,12 +46,13 @@
                 на примере обучения в Практикуме.
               </p>
             </div>
+          </div>
         </section>
 
         <!-- Секция, блок digits. -->
-        <section class="content__section">
+        <section class="digits content__section">
           <h3 class="section-title">Цифры и факты</h3>
-          <h4 class="section-subtitle">Про учёбу и мозг</h4>
+          <h4 class=" section-subtitle digits__section-subtitle">Про учёбу и мозг</h4>
           <div class="table">
             <div class="table__cell">
               <h5 class="table__heading">86 миллиардов</h5>
@@ -62,8 +64,7 @@
               <h5 class="table__heading">2,1 миллиарда</h5>
               <p class="table__text">
                 Число нуждающихся в повышении квалификаци
-                <br>
-                Всемирный Банк, 2017
+                <span class="table__span-breaker">Всемирный Банк, 2017</span>
               </p>
             </div>
             <div class="table__cell">
@@ -82,8 +83,7 @@
               <h5 class="table__heading">420 миллионов</h5>
               <p class="table__text">
                 Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства
-                <br>
-                Всемирный Банк, 2017
+                <span class="table__span-breaker">Всемирный Банк, 2017</span>
               </p>
             </div>
             <div class="table__cell">
@@ -106,14 +106,16 @@
         </section>
 
         <!-- Секция, блок feynman. -->
-        <section class="content__section"></section>
+        <section class="feynman content__section"></section>
 
         <!-- Секция, блок kaufman. -->
-        <section class="content__section"></section>
+        <section class="kaufman content__section"></section>
       </main>
 
       <!-- Подвал сайта. -->
-      <footer class="footer page__footer"></footer>
+      <footer class="footer page__footer">
+        <img class="logo logo_place_footer" src="./images/logo_place_header.svg" alt="Яндекс Практикум">
+      </footer>
     </div>
   </body>
 </html>

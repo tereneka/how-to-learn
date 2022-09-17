@@ -27,14 +27,15 @@
   align-items: center;
   position: relative; /* позиционирование page__header для абсолютного позициогирования дочерних элементов*/
   background-color: var(--light-gray);
+  overflow: hidden; /* Чтобы при малой высоте браузера синий квадрат не вылезал снизу блока header.*/
 }
 
 .logo {
+  width: 228px;
+  height: 32px;
 }
 
 .logo_place_header {
-  width: 228px;
-  height: 32px;
   position: absolute;
   top: 30px;
   left: 64px;
@@ -42,13 +43,11 @@
 }
 
 .logo_place_footer {
-  width: 228px;
-  height: 32px;
 }
 
 .header__title {
   margin: 0; /*сбросила отступы браузера*/
-  width: 730px;
+  max-width: 730px;
   margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
@@ -58,7 +57,7 @@
 
 .header__subtitle {
   margin: 0; /*сбросила отступы браузера*/
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -88,6 +87,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  object-fit: contain;
 }
 
 .content {
@@ -113,7 +113,7 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
   color: var(--blue);
   margin: 0; /*сбросила отступы браузера*/
   line-height: 1.2;
@@ -130,6 +130,7 @@
   margin: 0 0 30px; /*сбросила отступы браузера, установила отступ снизу 30px*/
   line-height: 34px;
   font-size: 24px;
+  font-weight: normal;
 }
 
 .two-columns__paragraph:last-child {
@@ -196,7 +197,6 @@
 
 .table__heading {
   margin: 0; /*сбросила отступы браузера*/
-  margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -206,10 +206,7 @@
 }
 
 .table__text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px 0;
-  margin: 0;
+  margin: 20px auto 0;
   line-height: 1.2;
   font-size: 18px;
 }
@@ -223,12 +220,12 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 867px 637px;
-  height: 890px;
+  min-height: 890px;
   position: relative;
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   margin: 0 auto; /*сбросила отступы браузера и выраняла по центру*/
   padding-top: 100px;
   text-align: center;
@@ -270,20 +267,28 @@
   position: absolute;
   top: 0;
   right: -210px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .footer {
   min-height: 350px;
-  width: 90%;
-  padding: 60px 5% 40px;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
   background-color: var(--dark-gray);
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__columns {
   display: flex;
   justify-content: space-between;
-  min-height: inherit;
+  width: 90%;
+}
+
+.footer__column {
 }
 
 .footer__column_content_copyright {
@@ -297,7 +302,7 @@
   margin: 18px 0;
   width: fit-content;
   line-height: 25px;
-  font-family: 18px;
+  font-size: 18px;
 }
 
 .footer__column_content_info {
@@ -330,16 +335,4 @@
   width: 16px;
   height: 16px;
   display: inline-block;
-}
-
-.footer__column-link:nth-child(1) .footer__social-icon {
-  background-image: url(../images/facebook_color_white.svg);
-}
-
-.footer__column-link:nth-child(2) .footer__social-icon {
-  background-image: url(../images/vk_color_white.svg);
-}
-
-.footer__column-link:nth-child(3) .footer__social-icon {
-  background-image: url(../images/instagram_color_white.svg);
 }

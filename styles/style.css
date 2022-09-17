@@ -87,7 +87,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  object-fit: contain;
+  object-fit: cover; /*Спасибо за подсказку, не заметила косяк)*/
 }
 
 .content {
@@ -209,6 +209,7 @@
   margin: 20px auto 0;
   line-height: 1.2;
   font-size: 18px;
+  font-weight: normal;
 }
 
 .table__text_theme_dark {
@@ -249,6 +250,7 @@
   right: 48px;
   line-height: 51px;
   font-size: 36px;
+  font-weight: normal;
   text-decoration: none;
   color: var(--blue);
 }
@@ -303,6 +305,7 @@
   width: fit-content;
   line-height: 25px;
   font-size: 18px;
+  font-weight: normal;
 }
 
 .footer__column_content_info {
@@ -312,11 +315,13 @@
   margin: 0;
   line-height: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 600; /*было указано в предыдущем варианте*/
 }
 
 .footer__column-links {
   margin: 20px auto 16px;
+  list-style: none;
+  padding: 0;
 }
 
 .footer__column-link {
@@ -325,6 +330,7 @@
   display: block;
   line-height: 30px;
   font-size: 18px;
+  font-weight: normal;
 }
 
 .footer__column_content_social {

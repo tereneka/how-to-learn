@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!--
+  Спасибо за подробные комментарии! Мне было полезно;)
+  В CSS я ещё в нескольких местах пропустила font-weight,
+  хотела сократить код, но уже исправила.
+ -->
 
 <head>
   <meta charset="UTF-8">
@@ -21,13 +26,13 @@
         <a class="header__link" href="#">Узнать &#8594;</a>
       </p>
       <div class="header__square-pic"></div>
-      <img class="header__main-illustration" src="./images/header-image.png" alt="Картина 'Опять двойка'" />
+      <img class="header__main-illustration" src="./images/header-image.png" alt="Картина 'Опять двойка'">
     </header>
 
     <!-- Основное содержимое страницы. -->
     <main class="content">
       <!-- Секция, блок description. -->
-      <section class="description">
+      <section class="description" aria-label="Описание">
         <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
@@ -188,35 +193,45 @@
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="Яндекс Практикум" />
+          <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="Яндекс Практикум">
           <p class="footer__author">&copy; Екатерина Терентьева</p>
         </div>
         <div class="footer__column footer__column_content_info">
           <h6 class="footer__column-heading">О Практикуме</h6>
-          <nav class="footer__column-links">
+          <nav>
             <!--
-              В рекомендованных исправлениях нужно использовать список ul li,
-              но в брифе нет таких элементом, поэтому я не смогу прописать в css
-              отступы и list-style.
+              Супер! Спасибо!!!
+              Вот я неумная, сама не сообразила)
             -->
-            <a class="footer__column-link" href=" #">Главная</a>
-            <a class="footer__column-link" href="#">Концепция</a>
-            <a class="footer__column-link" href="#">Наставники</a>
+            <ul class="footer__column-links">
+              <li><a class="footer__column-link" href=" #">Главная</a></li>
+              <li><a class="footer__column-link" href="#">Концепция</a></li>
+              <li><a class="footer__column-link" href="#">Наставники</a></li>
+            </ul>
           </nav>
         </div>
         <div class="footer__column footer__column_content_social">
           <h6 class="footer__column-heading">Соцсети</h6>
-          <nav class="footer__column-links">
-            <a class="footer__column-link" href="#">
-              <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Facebook" lang="en">Facebook
-            </a>
-            <a class="footer__column-link" href="#">
-              <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="ВКонтакте">ВКонтакте
-            </a>
-            <a class="footer__column-link" href="#">
-              <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Instagram"
-                lang="en">Instagram
-            </a>
+          <nav>
+            <ul class="footer__column-links">
+              <li>
+                <a class="footer__column-link" href="#">
+                  <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Facebook"
+                    lang="en">Facebook
+                </a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">
+                  <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="ВКонтакте">ВКонтакте
+                </a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">
+                  <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Instagram"
+                    lang="en">Instagram
+                </a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>

@@ -1,0 +1,5 @@
+.section-subtitle_theme_dark {
+  /* установила position и z-index, чтобы изображение(элемент kaufman__triangle) не перекрывало текст */
+  position: relative;
+  z-index: 1;
+}

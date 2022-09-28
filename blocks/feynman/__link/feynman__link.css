@@ -1,0 +1,18 @@
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: var(--blue);
+  /* ниже свойства, чтобы ссылки при наведении мыши плавно становились немного прозрачными */
+  opacity: 1; /*без указания opacity: 1 тоже работает*/
+  transition: opacity 0.7s;
+}
+
+.feynman__link:hover {
+  opacity: 0.5;
+}
+/* --- */

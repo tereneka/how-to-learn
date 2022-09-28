@@ -1,0 +1,8 @@
+.feynman__subtitle {
+  width: fit-content;
+  margin: 70px auto 0; /*сбросила отступы браузера и выраняла по центру*/
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}

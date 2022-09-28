@@ -1,0 +1,12 @@
+.resources__link {
+  /* border: 2px solid red; */
+  display: inline-block;
+  width: 270px;
+  height: 38px;
+  opacity: 1;
+  transition: opacity 0.7s;
+}
+
+.resources__link:hover {
+  opacity: 0.5;
+}

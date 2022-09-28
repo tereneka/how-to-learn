@@ -1,4 +1,5 @@
 @import url(../vendor/normalize.css);
+@import url(../vendor/variables.css);
 @import url(../blocks/rotation/rotation.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
@@ -70,9 +71,3 @@
 @import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
-
-:root {
-  --dark-gray: #1f1f1f;
-  --light-gray: #f2f2f2;
-  --blue: #2f80ed;
-}

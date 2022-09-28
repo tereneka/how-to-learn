@@ -1,0 +1,10 @@
+.two-columns__paragraph {
+  margin: 0 0 30px; /*сбросила отступы браузера, установила отступ снизу 30px*/
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0; /*сбросила отступы для последнего параграфа в блоке*/
+}
